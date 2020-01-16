@@ -1,0 +1,126 @@
+/*-- DGM 2740 by Tavian Haddock --*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*-- HEADER --*/
+header {
+  background-color: #22252c;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header h1 {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: lighter;
+  padding: 0.5em 0.25em 0.5em 1em;
+}
+
+header h2 {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 0 0.25em 0.75em 1.5em;
+}
+
+/*-- NAVIGATION --*/
+nav {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #c0b3a0;
+}
+
+/*-- nav ul option 
+nav ul {
+}
+--*/
+
+nav li {
+  width: 100%;
+  float: left;
+  background-color: #3f3250;
+  border-right: solid 1px #445e8a;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+nav li a.active {
+  background-color: #e14658;
+}
+
+/*-- BODY --*/
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+main img {
+  width: 100%;
+  padding: 0.25em 0.75em;
+}
+
+main img.tablet {
+  display: none;
+}
+
+main img.desktop {
+  display: none;
+}
+
+main img.mobile {
+  width: 100%;
+  display: inline;
+}
+
+main h1 {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: lighter;
+  padding: 1em 0 0 1em;
+}
+
+/*-- FOOTER --*/
+footer {
+  background-color: #22252c;
+  padding: 15px 0 15px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+}
+
+.keepOpen {
+  clear: both;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

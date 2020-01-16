@@ -1,0 +1,23 @@
+/*-- DGM 2740 by Tavian Haddock --*/
+
+@media only screen and (min-width: 560px) {
+  /*-- NAVIGATION --*/
+  nav li {
+    width: 25%;
+  }
+
+  /*-- BODY --*/
+  main img.mobile {
+    display: none;
+  }
+
+  main img.desktop {
+    display: none;
+  }
+
+  main img.tablet {
+    width: 50%;
+    float: right;
+    display: inline;
+  }
+} /* end media query*/
