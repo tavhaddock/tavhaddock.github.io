@@ -1,23 +1,33 @@
 /*-- DGM 2740 by Tavian Haddock --*/
 
 @media only screen and (min-width: 560px) {
+  .logo {
+    float: left;
+    width: 70px;
+  }
+
+  .slogan {
+    display: inline;
+    margin: 0;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
   /*-- NAVIGATION --*/
   nav li {
     width: 25%;
   }
 
   /*-- BODY --*/
-  main img.mobile {
-    display: none;
+
+  .hero {
+    width: 100%;
   }
 
-  main img.desktop {
-    display: none;
-  }
-
-  main img.tablet {
+  .device {
     width: 50%;
-    float: right;
-    display: inline;
+    padding: 0.25em 0.75em;
   }
 } /* end media query*/
