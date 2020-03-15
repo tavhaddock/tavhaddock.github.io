@@ -80,10 +80,31 @@ nav li a.active {
 
 /*-- BODY --*/
 main {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: auto;
 }
+
+main img {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+
+main h1 {
+  color: #000;
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: lighter;
+  padding: 1em 0 0 1em;
+}
+
+main h2 {
+  padding: 20px;
+  font-size: 30px;
+}
+
 .hero {
+  float: right;
   width: 100%;
 }
 
@@ -99,14 +120,6 @@ main {
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: lighter;
-}
-
-main h1 {
-  color: #000;
-  font-family: Roboto, sans-serif;
-  font-size: 36px;
-  font-weight: lighter;
-  padding: 1em 0 0 1em;
 }
 
 .text {
