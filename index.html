@@ -1,81 +1,97 @@
-<!-- DGM 2740 by Tavian Haddock -->
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Fill Me In" />
+    <meta name="author" content="John Doe" />
 
-    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Assignment 03 - Fruit Stand</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
 
-    <title>03 Fruit Market</title>
+    <!-- STYLE SHEETS -->
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- EMBED  GOOGLE FONT -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-      rel="stylesheet"
-    />
   </head>
-
   <body>
-    <div id="wrapper"></div>
-    <!-- PAGE HEADER GOES HERE -->
+    <div id="headerWrapper">
+      <!-- HEADER HERE -->
+      <header>
+        <div>
+          <h1>Tav's Fruit Stand</h1>
+          <h2>Just Beet It!</h2>
+        </div>
+      </header>
+    </div>
+    <!--end of headerWrapper-->
 
-    <header>
-      <img class="logo" src="img/artavialogo.png" alt="logo" />
-      <h1>Museum of Science</h1>
-      <h2 class="slogan" id="motto">Know and Grow</h2>
-    </header>
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+      <nav class="clearfix">
+        <ul>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Mission</a></li>
+          <li class="active"><a href="#">Produce</a></li>
+          <li><a href="#">Partners</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--end ofnavWrapper-->
 
-    <!-- PAGE NAVIGATION GOES HERE -->
-    <nav class="clearfix">
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="#">Learn</a></li>
-        <li><a href="#">Science</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <div class="keepOpen"></div>
-    </nav>
-
-    <!-- PAGE CONTENT GOES HERE	-->
-    <main class="clearfix">
-      <img class="hero" src="img/sciencestuff.jpg" alt="science stuff" />
-      <h2 id="prompt">Home</h2>
-      <img class="device" src="img/museum.jpg" alt="tablet" />
-      <p class="text">
-        Aliquam rutrum elementum consectetur. Cras commodo aliquam magna, sit
-        amet ullamcorper tellus. Ut sed pellentesque orci. Maecenas eget
-        convallis augue. Mauris tincidunt orci ut dignissim feugiat. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Nam placerat volutpat diam.
-        In lobortis blandit convallis. Morbi elementum scelerisque sapien, et
-        ultrices leo faucibus tempor. Etiam vulputate commodo nunc et convallis.
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-        cubilia Curae; Fusce a rutrum leo. Vivamus tincidunt nulla a semper
-        malesuada. Nullam mollis id quam quis rutrum. Pellentesque id
-        consectetur turpis, porta maximus massa. Orci varius natoque penatibus
-        et magnis dis parturient montes, nascetur ridiculus mus. Duis commodo
-        ante eu tellus tempus porta. Ut hendrerit orci pellentesque leo auctor
-        faucibus. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Quisque ullamcorper nisi vitae
-        nunc cursus laoreet. Duis dolor mauris, varius eget libero sit amet,
-        eleifend ultricies magna. Sed erat velit, vehicula in feugiat ac,
-        tincidunt sit amet arcu. Suspendisse sodales tortor facilisis enim
-        commodo ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Nullam consectetur lacinia sem,
-        laoreet fermentum massa tincidunt et. Mauris fringilla lectus in lectus
-        auctor molestie. Sed blandit arcu et odio fermentum rhoncus.
-      </p>
-    </main>
-
-    <!-- PAGE FOOTER GOES HERE-->
-    <footer>
-      <p>© 2020 • Tavian Haddock</p>
-    </footer>
-    <script src="js/main.js"></script>
+    <!-- CONTENT HERE -->
+    <div id="mainWrapper">
+      <main>
+        <div class="gallery">
+          <figure>
+            <img src="images/apples.jpg" />
+            <figcaption>Apples</figcaption>
+          </figure>
+          <figure>
+            <img src="images/avocados.jpeg" />
+            <figcaption>avocados</figcaption>
+          </figure>
+          <figure>
+            <img src="images/cantaloupe.jpg" />
+            <figcaption>Cantaloupes</figcaption>
+          </figure>
+          <figure>
+            <img src="images/corn.jpg" />
+            <figcaption>Corn</figcaption>
+          </figure>
+          <figure>
+            <img src="images/oranges.jpg" />
+            <figcaption>Oranges</figcaption>
+          </figure>
+          <figure>
+            <img src="images/raspberries.jpg" />
+            <figcaption>Raspberries</figcaption>
+          </figure>
+          <figure>
+            <img src="images/tomatoes.jpg" />
+            <figcaption>Tomatoes</figcaption>
+          </figure>
+          <figure>
+            <img src="images/watermelons.jpg" />
+            <figcaption>Watermelons</figcaption>
+          </figure>
+        </div>
+      </main>
+    </div>
+    <!--end of mainWrapper-->
+    <!-- FOOTER HERE -->
+    <div id="footerWrapper">
+      <footer>
+        &copy; 2020 &bull; Tavian Haddock
+      </footer>
+    </div>
+    <!--end of footerWrapper-->
   </body>
 </html>

@@ -1,0 +1,33 @@
+header,
+nav,
+main,
+footer {
+  max-width: 64rem;
+  margin: auto;
+}
+
+/*----------- BODY --------------*/
+
+/*----------- HEADER --------------*/
+
+header h2 {
+  display: block;
+  margin: 0;
+  font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+
+/*----------- MAIN --------------*/
+
+main {
+  .gallery {
+    flex-basis: 25%;
+
+    figure {
+      width: 25%;
+    }
+  }
+}
+
+/*----------- FOOTER --------------*/

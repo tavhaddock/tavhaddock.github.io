@@ -1,0 +1,131 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: $fontFamilyVariable;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 71.25rem;
+}
+
+/*----------- HEADER --------------*/
+
+header {
+  padding: 0.5rem $gutter;
+  display: flex;
+  justify-content: left;
+}
+#logo {
+  height: 50px;
+  padding-right: 10px;
+}
+header h1 {
+  margin: 0;
+}
+header h2 {
+  display: none;
+  margin: 0;
+  font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+#navWrapper {
+  width: 100%;
+  background-color: lighten($primaryColor, 20%);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+nav ul li {
+  float: left;
+  width: 25%;
+}
+nav ul li a {
+  display: block;
+  color: #333;
+  border-left: 1px solid #777;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+}
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li a:hover {
+  background-color: lighten($primaryColor, 30%);
+  color: #333;
+}
+nav ul li.active a {
+  background-color: lighten($primaryColor, 10%);
+  color: #fff;
+}
+
+/*----------- MAIN --------------*/
+
+main {
+  padding: 0 $gutter;
+  min-height: 10rem;
+  background: #eee;
+
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+
+    figure {
+      padding: $gutter;
+      width: 50%;
+      margin: 0;
+
+      figcaption {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*----------- FOOTER --------------*/
+#footerWrapper {
+  width: 100%;
+  background-color: $primaryColor;
+}
+
+footer {
+  padding: 0.5rem $gutter;
+  text-align: center;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
