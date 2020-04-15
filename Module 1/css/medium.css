@@ -1,21 +1,12 @@
-/* DGM 2740 by Tavian Haddock */
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 48rem) {
-  /* Styles */
-
-  main img {
-    width: 100%;
-    padding: 0.25em 0.75em;
-  }
-
-  main img.mobile {
+/*Tablet */
+@media only screen and (min-width: 560px) {
+  .desktop {
     display: none;
   }
-  main img.tablet {
-    display: block;
+  .tablet {
+    display: inline;
   }
-  main img.desktop {
+  .mobile {
     display: none;
   }
 }
