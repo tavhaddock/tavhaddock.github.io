@@ -1,0 +1,21 @@
+/* DGM 2740 by Tavian Haddock */
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 76.5rem) {
+  /* Styles */
+
+  main img {
+    width: 100%;
+    padding: 0.25em 0.75em;
+  }
+
+  main img.mobile {
+    display: none;
+  }
+  main img.tablet {
+    display: none;
+  }
+  main img.desktop {
+    display: block;
+  }
+}
